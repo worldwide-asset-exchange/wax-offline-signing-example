@@ -1,0 +1,13 @@
+{
+  "name": "@waxio/offline-transfer",
+  "description": "Example of how to do an offline signature using eosjs and the eosio.token contract's transfer action",
+  "author": "WAX",
+  "scripts": {
+    "get-abi": "curl -X POST -d '{\"account_name\": \"eosio.token\"}' https://wax.greymass.com/v1/chain/get_raw_abi > eosio.token.abi.json",
+    "sign": "node offline-transfer.js"
+  },
+  "dependencies": {
+    "eosjs": "^22.1.0",
+    "node-fetch": "^2.6.1"
+  }
+}
